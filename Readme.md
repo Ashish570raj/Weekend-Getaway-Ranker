@@ -111,6 +111,11 @@ All paths are relative, making the app cloud-compatible.
 ---
 
 ## 📊 Sample Output
+## 📸 Application Screenshot
+
+Below is a snapshot of the Streamlit application showing personalized weekend getaway recommendations based on the selected source city.
+
+![Weekend Getaway Ranker App](screenshots/streamlit_app_demo.png)
 
 * Ranked list of destinations
 * Distance from source city (km)
