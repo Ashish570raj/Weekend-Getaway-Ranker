@@ -57,7 +57,6 @@ A weighted scoring model combines these factors to generate personalized recomme
 ## 📂 Project Structure
 
 weekend-getaway-ranker/
-│
 ├── app.py                                  # Streamlit application
 ├── weekend_getaway_ranker_model.pkl        # Trained ranking model
 ├── scaler.pkl                              # Feature scaler
