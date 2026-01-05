@@ -58,32 +58,33 @@ A weighted scoring model combines these factors to generate personalized recomme
 
 weekend-getaway-ranker/
 │
-├── app.py                          # Streamlit application
+├── app.py                           # Streamlit application
 ├── weekend_getaway_ranker_model.pkl # Trained ranking model
-├── scaler.pkl                      # Feature scaler
-├── city_coordinates.csv            # City latitude & longitude
-├── Top Indian Places to Visit.csv  # Dataset
-├── weekend_getaway_ranker.ipynb    # Notebook (EDA + Model)
-├── requirements.txt                # Dependencies
+├── scaler.pkl                       # Feature scaler
+├── city_coordinates.csv             # City latitude & longitude
+├── Top Indian Places to Visit.csv   # Dataset
+├── weekend_getaway_ranker.ipynb     # Notebook (EDA + Model)
+├── requirements.txt                 # Dependencies
 └── README.md
 
-```
+---
 
 ## 🧪 Model Details
 
-- **Type:** Weighted ranking model (not classification/regression)
+- **Type:** Weighted ranking model (not classification / regression)
 - **Scoring Logic:**
 
-  Final Score =(0.4 × Rating)* (0.3 × Popularity)− (0.3 × Distance)
+Final Score =(0.4 × Rating) * (0.3 × Popularity) − (0.3 × Distance)
 
 - Features are normalized using **MinMaxScaler**
-- Distance is calculated dynamically per user input
+- Distance is calculated dynamically based on the user’s source city
 
 ---
 
 ## ▶️ How to Run Locally
 
 ### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/<your-username>/weekend-getaway-ranker.git
 cd weekend-getaway-ranker
@@ -95,7 +96,7 @@ cd weekend-getaway-ranker
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run Streamlit App
+### 3️⃣ Run the Streamlit App
 
 ```bash
 streamlit run app.py
