@@ -1,6 +1,5 @@
 
-```md
-# 🏖️ Weekend Getaway Ranker
+## 🏖️ Weekend Getaway Ranker
 
 A **machine-learning powered recommendation system** that suggests the best weekend travel destinations based on **distance, popularity, and user ratings**.  
 The project is built using **Python, Pandas, Scikit-learn**, and deployed as an interactive **Streamlit web app**.
@@ -57,8 +56,6 @@ A weighted scoring model combines these factors to generate personalized recomme
 
 ## 📂 Project Structure
 
-```
-
 weekend-getaway-ranker/
 │
 ├── app.py                          # Streamlit application
@@ -72,22 +69,12 @@ weekend-getaway-ranker/
 
 ```
 
----
-
 ## 🧪 Model Details
 
 - **Type:** Weighted ranking model (not classification/regression)
 - **Scoring Logic:**
 
-```
-
-Final Score =
-(0.4 × Rating)
-
-* (0.3 × Popularity)
-  − (0.3 × Distance)
-
-````
+  Final Score =(0.4 × Rating)* (0.3 × Popularity)− (0.3 × Distance)
 
 - Features are normalized using **MinMaxScaler**
 - Distance is calculated dynamically per user input
